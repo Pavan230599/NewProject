@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students Grade check</title>
+
+<body bgcolor="gold">
+    <h3>Enter Student Percentage</h3>
+    <input type="text" id="percentage" placeholder="Enter text">
+    <button type="button" Onclick="Gradecheck()">Find Grade</button>
+    <p id="demo"></p>
+    <script type="text/javascript">
+        function Gradecheck() {
+            var x, p, text;
+            p = document.getElementById("percentage").value;
+            x = parseInt(p);
+
+            if (x > 90 && x <= 100) {
+                document.getElementById("demo").innerHTML = "A1"
+            }
+            else if (x > 80 && x <= 90) {
+                document.getElementById("demo").innerHTML = "A2"
+            }
+            else if (x > 70 && x <= 80) {
+                document.getElementById("demo").innerHTML = "A3"
+            }
+            else if (x > 60 && x <= 70) {
+                document.getElementById("demo").innerHTML = "A4"
+            }
+            else {
+                document.getElementById("demo").innerHTML = "invalid data"
+            }
+        }
+    </script>
+</body>
+</head>
+
+<body>
+
+</body>
+
+</html>

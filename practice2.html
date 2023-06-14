@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p id="demo"></p> 
+   <script>
+    const person=[
+        {firstname:"Pavan",lastname:"charan"}
+    ];
+    document.getElementById("demo").innerHTML=person.map(getFullname);
+
+    function getFullname(item){
+        return[item.firstname,item.lastname].join(" ");
+    }
+   </script>
+</body>
+</html>
